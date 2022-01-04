@@ -1,0 +1,193 @@
+:root {
+    --white-color: #fff;
+    --black-color : #000;
+    --text-color: #ccc;
+    --color: rgb(134, 133, 133);
+    --grey--color : grey;
+    --primary--color : #fb5533;
+    --fa--color: #ece9e9;
+    --header__sort__height:46px;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__full-width {
+    width: 100%;
+}
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.grid__column--2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.667%;
+}
+.grid__column--10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+}
+.grid__column--2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+.modal.flex {
+    display: flex;
+}
+.modal__login.flex {
+    display: flex;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.199);
+}    
+.modal__login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    bottom: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.199);
+}   
+.modal__body {
+    width: 500px;
+    padding: 32px;
+    border-radius: 2px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    animation: modalFadeIn ease 0.3s;
+}
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+}
+.modal__header .register{
+    font-size: 1.8rem;
+}
+.modal__header span {
+    font-size: 1.6rem;
+    color: red;
+}
+.modal__content {
+    margin-top: 38px;
+}
+.modal__content input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4rem;
+    margin-top: 18px;
+    border: rgb(184, 184, 184) 0.5px solid;
+}
+.modal__content input:focus{
+    outline: rgb(4, 0, 255) solid 0.5px;
+    border: white 1px solid;
+}
+.content--text {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 400;
+
+}
+.content--text a {
+    text-decoration: none;
+    cursor: pointer;
+    color: red;
+}
+.modal__bottom--converse {
+    display: flex;
+    justify-content: end;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.btn {
+    min-width: 124px;
+    text-align: center;
+    padding: 12px 20px;
+    margin: 5px;
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: var(--white-color);
+}
+.btn__back {
+    background-color: #dddada;
+}
+.btn__register {
+    background-color: rgb(243, 44, 44);
+    color: var(--white-color);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+.btn__form--colorRed {
+    cursor: pointer;
+}
+.btn__form--colorRed:hover{
+    opacity: 0.7;
+}
+.bottom__network {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom__network div {
+  width: 100%;
+  text-align: center;
+  color: var(--white-color);
+  
+}
+.modal__bottom a {
+    text-decoration:none ;
+    font-size: 1.3rem;
+    color: var(--white-color);
+}
+.bottom__network div i {
+    font-size: 1.8rem;
+    transform: translateY(2px);
+}
+.bottom--facebook {
+    background-color: #1877f2;
+}
+.bottom--google {
+    background-color: rgb(43, 255, 0);
+}
+
+.bottom--facebook a,
+.bottom--google a {
+    padding: 10px 12px;
+}
+@keyframes modalFadeIn {
+    from{
+        transform: scale(0);
+        opacity: 0;
+        
+
+    } to {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+

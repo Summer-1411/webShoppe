@@ -1,0 +1,123 @@
+/* mobile & tablet */
+@media (max-width:1023px) {
+    .app {
+        overflow: hidden;
+    }
+    .hiden-on-mobile-tablet {
+        display: none;
+    }
+    .header__main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    
+    .container {
+        margin-top: 100px;
+    }
+    .my__cart {
+        position: fixed;
+        top: 62px;
+        right: 0;
+        width: 100%;
+        padding: 0 calc((100% - 644px) / 2)
+    } 
+    .search__shopping .my__cart::before {
+        display: none;
+    }
+    .header__sort__navbar {
+        display: block;
+    }
+    .category__mobile {
+        display: block;
+    }
+    .content__mobile__icon {
+       display: flex;
+    }
+    .modal__body {
+        max-width: 440px;
+        width: 100%;
+    }
+
+}
+
+/* tablet */
+@media (min-width:740px) and (max-width:1023px) {
+    .hiden-on-tablet {
+        display: none;
+    }
+    .search__shopping {
+        text-align: right;
+        width: 80px;
+    }
+    
+
+
+
+}
+/* Mobile */
+@media (max-width:739px){
+    .hiden-on-mobile {
+        display: none;
+    }
+    .content__logo {
+        height: 62px;
+    } 
+    .content__search--item {
+        position: fixed;
+        top: 62px;
+        display: none;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        animation: searchMobile linear 0.3s;
+    }
+    
+    .content {
+        align-items: center;
+        padding: 0 10px;
+    }
+    .content .content__body {
+        align-items: center;
+        flex: none;
+        margin: 0;
+    }
+    .search__shopping {
+        margin: 0;
+    }
+    .search__history {
+        width: 100%;
+    }
+    .btn__curent--page {
+        font-size: 1.2rem;
+        margin: 0 5px;
+        min-width: 20px;
+    }
+    .box__col {
+        text-align: center;
+    }
+    .support__link {
+        text-align: center;
+        display: block;
+    }
+    .img__app--link {
+        justify-content: space-around;
+        
+    }
+    
+
+
+}
+@keyframes searchMobile {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
